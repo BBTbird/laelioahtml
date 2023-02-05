@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/download.css">
+    <script src="js/jquery-3.6.1.js"></script>
+    <link rel="shortcut icon" href="img/A.png"/>
+
+</head>
+<script>
+
+    $(function() {
+        $('#navlist>li').mouseover(function() {
+            $('#navlist>li>a').removeClass('downloadfont')
+        }).mouseout(function() {
+            $('#navlist>li>a:eq(0)').addClass('downloadfont')
+        })
+
+        $('.downloadfont-02').fadeIn(600);
+        $('.downloadfont-03').fadeIn(1000);
+        $('.downloadfont-04').fadeIn(1300);
+
+    })
+    function a1() {
+            var url = 'zip/资源下载测试.rar'
+            window.location.href=url;
+        }
+    function a2() {
+            var url = 'zip/光影下载测试.rar'
+            window.location.href=url;
+        }
+
+</script>
+<body background="img/00001.png" onunload="a1()">
+<div class="boss01">
+    <div class="HeaderImg">
+
+        <table border="0">
+
+        <tr class="HeaderTR" >
+            <td>
+                <img src="img/minecraft.svg" style="width: 100px;height: 60px" class="minecraftimg">
+            </td>
+            <td>
+                <span>
+                    <a href="index.html" class="LAELIOA">
+                   LAELIOA
+                    </a>
+                </span>
+            </td>
+            <td class="LAELIOAimg">
+<!--                <img src="img/LAELIOA.png" style="width: 80px;height: 30px">-->
+            </td>
+            <td>
+<div class="navigationbar">
+
+        <ul class="navlist" id="navlist">
+            <li class="list"><a href="download.html" class="downloadfont">下载</a>
+            <li class="list"><a href="help.html">帮助</a></li>
+            </li>
+                <ul class="dorplist">
+                <li class=""><a href="#">光影 [1.12.2]</a></li>
+                <li class=""><a href="#">模组 [1.12.2]</a></li>
+                <li class=""><a href="#">材质 [1.12.2]</a></li>
+                </ul>
+            </li>
+            <li class="list"><a href="https://qm.qq.com/cgi-bin/qm/qr?k=BOwj6i_IUnFQ8abs6plPPvTevEpFwNDX&jump_from=webapi">加入QQ群</a></li>
+            <li class="list"><a href="https://space.bilibili.com/27838715/?spm_id_from=333.999.0.0">前往 BiliBili</a></li>
+            <li class="list"><a href="Rai_index.html">详情</a></li>
+        </ul>
+</div>
+            </td>
+            <td>
+                <div class="denlu">
+
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+</div>
+
+<div class="boss02">
+    <div class="download-01">
+        <div border="1" class="download-02">
+                <div class="downloadfont-01">
+                    <span></span>
+                </div>
+<!--下载1-->
+                <div class="downloadfont-02" style="display: none">
+                    <div class="downloadfont-02-top-color" style="background-color: initial">
+
+                </div>
+                <div class="downloadfont0">
+                    <img src="img/11059.png">
+                <p class="downloadfont-02-1">整合包下载</p>
+                    <p class="downloadfont02p">━━━━━━━━━━━━━</p>
+                <p class="downloadfont-02-2">包含所有资源<br>一键启动游戏</p>
+                <button class="downloadgo" onclick="alert('不提供在线下载')">暂不提供下载</button>
+                    <br><br>
+                    <div class="downloadH">
+                    <p>版本：1.12.2</p>
+                    </div>
+
+                </div>
+                </div>
+
+
+<!--下载2-->
+                <div class="downloadfont-03" style="display: none">
+<!--                    <div class="downloadfont-02-top-color" style="background-color: #ffae00"></div>-->
+                <div class="downloadfont0">
+
+                    <img src="img/52.png">
+                    <p class="downloadfont-02-1">资源包下载</p>
+                    <p class="downloadfont02p">━━━━━━━━━━━━━</p>
+                    <p class="downloadfont-02-2">仅包含<span style="color: #ff0000;">部分</span>模组和材质<br>需要自己手动安装</p>
+                    <button class="downloadgo" onclick="a1()">下&nbsp;&nbsp;&nbsp;载</button>
+                    <br><br>
+                    <div class="downloadH">
+                    <p>版本：1.12.2</p>
+                    </div>
+                </div>
+                </div>
+<!--下载3-->
+                <div class="downloadfont-04" style="display: none">
+<!--                    <div class="downloadfont-02-top-color" style="background-color: #E53333"></div>-->
+                <div class="downloadfont0">
+                    <img src="img/11113.png">
+                    <p class="downloadfont-02-1">光影包下载</p>
+                    <p class="downloadfont02p">━━━━━━━━━━━━━</p>
+                    <p class="downloadfont-02-2">仅包含适配的光影<br>需要一定电脑配置</p>
+                    <button class="downloadgo" onclick="a2()">下&nbsp;&nbsp;&nbsp;载</button>
+                    <br><br>
+                    <div class="downloadH">
+                    <p>适用版本：1.12.2</p>
+                    </div>
+                </div>
+                </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
