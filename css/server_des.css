@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+        *{
+            /*去除所有盒子的边距*/
+            margin: 0;
+            padding: 0;
+            /*所有文本修饰为默认*/
+            text-decoration: none;
+            /*去除所有列表标记*/
+            list-style: none;
+        }
+
+        body{
+            background-size: 100%;
+            background-attachment: fixed;
+            background-color: #07253d;
+            background-image: url("../img/logol1.jpg");
+
+        }
+
+        .boss01{
+
+        }
+
+        .HeaderImg{
+            width: 100%;
+            position: -webkit-sticky;
+            position: fixed;
+            background-image: linear-gradient(to right,#030F1D  , #05223f);
+            z-index: 99999;
+            transition: all 0.5s;
+        }
+
+        .HeaderTR{
+            margin: auto;
+            text-align: center;
+        }
+
+        .minecraftimg{
+            margin-left: 10%;
+        }
+
+        .LAELIOAimg{
+            padding-left: 500%;
+        }
+
+
+        .LAELIOA{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.5s;
+        }
+
+        .LAELIOA:hover {
+            font-size: 20px;
+            color: #4b9bff;
+            font-weight: bold;
+        }
+
+
+        /*导航栏*/
+        .navigationbar{
+            width: 900px;
+            height: 10px;
+            background-color: inherit;
+            margin-left: 10px;
+        }
+
+        .list{
+            float: left;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        /*[导航栏]超链接属性*/
+        .navlist a{
+            color: #FFFFFF;
+            font-size: 18px;
+            display: block;
+            font-weight: bolder;
+            transition: all 0.5s;
+        }
+
+        /*[导航栏]超链接鼠标放置属性*/
+        .navlist a:hover{
+            color: #333333;
+            border-right: 1px solid #4b9bff;
+            border-left: 1px solid #4b9bff;
+            background-color: #ffffff;
+            transition: all 0.5s;
+        }
+
+        /*[推荐资源]下拉栏属性*/
+        .dorplist{
+            background-color: #73a1e8;
+            display: none;
+        }
+
+
+
+        /*登录栏*/
+        .denlu{
+            margin-left:-1%;
+            width: 700px;
+            height: 30px;
+            text-align: right;
+            font-weight: bold;
+            border: #4b9bff;
+        }
+
+        .serverimg-div{
+            width: 1000px;
+            height: 1900px;
+            position: absolute;
+            top: 80px;
+            left: 455px;
+            margin-bottom: 200px;
+            background-color: #07253d;
+            overflow:hidden;
+            box-shadow: 0px 0px 10px 3px black;
+            background-image: url("../img/QQ图片20230130191820.jpg");
+            background-size: cover;
+        }
+
+        .top-button{
+            width: 50px;
+            height: 120px;
+            background-color: #ff4242;
+            position: fixed;
+            text-align: center;
+            font-size: 60px;
+            line-height: 120px;
+            color: #ffffff;
+            top: 400px;
+            left: 1500px;
+
+        }
+
+        .bottom-button{
+            width: 50px;
+            height: 120px;
+            background-color: #ff6f1d;
+            position: fixed;
+            text-align: center;
+            font-size: 60px;
+            line-height: 120px;
+            color: #ffffff;
+            top: 400px;
+            left: 1500px;
+            display: none;
+        }
+
+        .goyes-div{
+            width: 250px;
+            height: 150px;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            top: 1820px;
+            left: 1020px;
+            padding-left: 180px;
+            display: none;
+        }
+
+        .goyes-div>font{
+            font-weight: bolder;
+            text-align: left;
+        }
+
+        #yesname{
+            width: 150px;
+            border: 0px;
+            border-bottom: 1px solid black;
+            font-size: 20px;
+        }
+        .goyes-div>input:focus{
+            outline: none;
+        }
+
+        #yescheckbox{
+            width: 12px;
+            height: 12px;
+        }
+
+        .yesgo{
+            width: 200px;
+            height: 50px;
+            font-weight: bold;
+            font-size: 16px;
+            background-color: #ffffff;
+            border: 0px;
+            box-shadow: 0px 0px 5px 1px black;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-align: center;
+            line-height: 50px;
+            overflow:hidden;
+            position: relative;
+        }
+
+        .yesgo:hover{
+            transform: scale3d(0.97,0.97,0.97);
+            transition: all 0.3s;
+        }
+
+        .go-div{
+            width: 100%;
+            height: 910px;
+            background-color: rgba(0, 0, 0, 0.4);
+            position: fixed;
+            z-index: 99;
+            bottom: 0px;
+            display: none;
+
+        }
+
+        .go-del{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 510px;
+            top: -30px;
+            cursor: pointer;
+        }
+
+        .go-div-div{
+            width: 500px;
+            height: 160px;
+            background-color: rgb(4,25,47);
+            position: absolute;
+            z-index: 99;
+            bottom: 380px;
+            left: 720px;
+            box-shadow: 0px 0px 10px 5px black;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .go-div-div-div{
+            width: 400px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .go-div-div>button{
+            width: 200px;
+            height: 50px;
+            color: white;
+            border:1px solid #4b9bff;
+            float: left;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-left: 35px;
+            background: rgba(255, 255, 255, 0);
+            transition: all 0.2s;
+        }
+
+        .go-div-div>button:hover{
+            color: #4b4b4b;
+            border:1px solid #ffffff;
+            background: rgb(241, 241, 241);
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .go-div-div>font{
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+
+
+

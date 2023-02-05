@@ -1,0 +1,267 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: myfont;
+}
+
+            *{
+            /*去除所有盒子的边距*/
+            margin: 0;
+            padding: 0;
+            /*所有文本修饰为默认*/
+            text-decoration: none;
+            /*去除所有列表标记*/
+            list-style: none;
+        }
+
+            body{
+                background-size: 100%;
+                background-attachment: fixed;
+            }
+
+
+
+            .HeaderImg{
+            margin-top: 0%;
+            position: -webkit-sticky;
+            position: fixed;
+            top: 0;
+            background-image: linear-gradient(to right,#030F1D  ,#07182C );
+        }
+
+            .HeaderTR{
+            margin: auto;
+            text-align: center;
+            background-image: linear-gradient(to right,#030F1D  ,#07182C );
+        }
+
+            .minecraftimg{
+            margin-left: 10%;
+        }
+
+        .LAELIOAimg{
+            padding-left: 500%;
+        }
+
+        .LAELIOA{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+
+        .LAELIOA:hover {
+            font-size: 20px;
+            color: #4b9bff;
+            font-weight: bold;
+        }
+
+        /*导航栏*/
+        .navigationbar{
+            width: 1065px;
+            height: 10px;
+            background-color: inherit;
+            margin-left: 10px;
+        }
+
+        .list{
+            float: left;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        /*[导航栏]超链接属性*/
+        .navlist a{
+            color: #FFFFFF;
+            font-size: 18px;
+            display: block;
+            font-weight: bolder;
+        }
+
+        /*[导航栏]超链接鼠标放置属性*/
+        .navlist a:hover{
+            color: #4b9bff;
+            border-right: 1px solid #4b9bff;
+            border-left: 1px solid #4b9bff;
+            background-color: #041225;
+            transition: color 0.5s,border 0.5s;
+        }
+
+        /*[推荐资源]下拉栏属性*/
+        .dorplist{
+            background-color: #73a1e8;
+            display: none;
+        }
+
+        /*登录栏*/
+        .denlu{
+            margin-left:-5%;
+            width: 600px;
+            height: 30px;
+            text-align: right;
+            font-weight: bold;
+            border: #4b9bff;
+
+        }
+        /*登录注册字体属性*/
+        .denlufont{
+            font-size: 15px;
+            color: white;
+            text-align: center;
+        }
+
+        .denlufont:hover{
+            font-size: 15px;
+            color: #525252;
+            text-align: center;
+        }
+
+        .downloadfont{
+        /*background-color: #0a4585;*/
+        transition: border-color 0.5s;
+        border-right: 1px solid #4b9bff;
+        border-left: 1px solid #4b9bff;
+        background-color: #041225;
+
+        }
+
+        /*------------------------中上元素-------------------------*/
+
+        .boss02{
+            margin-top: 1px;
+            display: flex;
+        }
+
+
+        .downloadgo{
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            background-color:inherit;
+            text-align: center;
+            transition: background-color 0.5s,font-size 0.4s;
+            margin-top: 50px;
+            border: 2px solid #0bacfc;
+        }
+        .downloadgo:hover{
+            width: 150px;
+            height: 50px;
+            font-size: 23px;
+            font-weight: bold;
+            color: #595959;
+            background-color: #ffffff;
+            border: 1px solid #626262;
+            text-align: center;
+            transition: background-color 0.5s,font-size 0.4s;
+            cursor: pointer;
+        }
+
+
+        .download-01{
+            margin:auto;
+            text-align: center;
+        }
+
+        .download-02{
+            margin:auto;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .downloadfont-02-2{
+            font-size: 18px;
+            color: #c5c5c5;
+        }
+
+        .downloadfont-01{
+            width: 800px;
+            height: 200px;
+            font-size: 50px;
+            font-weight: bold;
+            display: flex;
+            margin: auto;
+
+        }
+
+        .downloadfont0{
+           margin-top: 50px;
+        }
+
+        .downloadfont-02-top-color{
+            width: 100%;
+            height: 10px;
+            background-color: #0bacfc;
+        }
+
+
+        .downloadfont-02{
+            width: 300px;
+            height: 500px;
+            text-align: center;
+            font-size: 30px;
+            background-color: #041225;
+            color: white;
+            border: 1px solid black;
+            display: inline;
+            float: left;
+            margin-right: 50px;
+            transition: width 0.5s,height 0.5s;
+        }
+        .downloadfont-02:hover{
+            width: 320px;
+            height: 520px;
+        }
+
+        .downloadfont-03:hover{
+            width: 320px;
+            height: 520px;
+        }
+
+        .downloadfont-04:hover{
+            width: 320px;
+            height: 520px;
+        }
+
+
+
+        .downloadfont-03{
+            width: 300px;
+            height: 500px;
+            text-align: center;
+            font-size: 30px;
+            background-color: #041225;
+            color: white;
+            border: 1px solid black;
+            display: inline-block;
+            margin: auto;
+            transition: width 0.5s,height 0.5s;
+        }
+
+        .downloadfont-04{
+            width: 300px;
+            height: 500px;
+            text-align: center;
+            font-size: 30px;
+            background-color: #041225;
+            color: white;
+            border: 1px solid black;
+            display: inline;
+            float: right;
+            margin-left: 50px;
+            transition: width 0.5s,height 0.5s;
+        }
+
+        .downloadfont02p{
+            color: #0bacfc;
+        }
+        .downloadH{
+            font-size: 15px;
+        }
+
+
+
+

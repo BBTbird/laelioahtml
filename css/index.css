@@ -1,0 +1,862 @@
+@charset "utf-8";
+
+
+        *{
+            /*去除所有盒子的边距*/
+            margin: 0;
+            padding: 0;
+            /*所有文本修饰为默认*/
+            text-decoration: none;
+            /*去除所有列表标记*/
+            list-style: none;
+        }
+
+        body{
+            background-size: 100%;
+            background-attachment: fixed;
+            background-color: #ffffff;
+
+        }
+
+        .boss01{
+
+        }
+
+        .HeaderImg{
+            width: 100%;
+            position: -webkit-sticky;
+            position: fixed;
+            background-image: linear-gradient(to right,#030F1D  , #05223f);
+            z-index: 99999;
+            transition: all 0.5s;
+        }
+
+        .HeaderTR{
+            margin: auto;
+            text-align: center;
+        }
+
+        .minecraftimg{
+            margin-left: 10%;
+        }
+
+        .LAELIOAimg{
+            padding-left: 500%;
+        }
+
+
+        .LAELIOA{
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            transition: all 0.5s;
+        }
+
+        .LAELIOA:hover {
+            font-size: 20px;
+            color: #4b9bff;
+            font-weight: bold;
+        }
+
+
+        /*导航栏*/
+        .navigationbar{
+            width: 900px;
+            height: 10px;
+            background-color: inherit;
+            margin-left: 10px;
+        }
+
+        .list{
+            float: left;
+            width: 150px;
+            line-height: 50px;
+            text-align: center;
+        }
+
+        /*[导航栏]超链接属性*/
+        .navlist a{
+            color: #FFFFFF;
+            font-size: 18px;
+            display: block;
+            font-weight: bolder;
+            transition: all 0.5s;
+        }
+
+        /*[导航栏]超链接鼠标放置属性*/
+        .navlist a:hover{
+            color: #333333;
+            border-right: 1px solid #4b9bff;
+            border-left: 1px solid #4b9bff;
+            background-color: #ffffff;
+            transition: all 0.5s;
+        }
+
+        /*[推荐资源]下拉栏属性*/
+        .dorplist{
+            background-color: #73a1e8;
+            display: none;
+        }
+
+
+
+        /*登录栏*/
+        .denlu{
+            margin-left:-1%;
+            width: 700px;
+            height: 30px;
+            text-align: right;
+            font-weight: bold;
+            border: #4b9bff;
+        }
+
+
+/*首页图片切换*/
+        .ondiv-center{
+            width: 100%;
+            height: 969px;
+            overflow: hidden;
+        }
+
+
+                .out {
+          width: 800px;
+          height: 200px;
+          position: relative;
+          top: 68px;
+        }
+        .out .inner {
+          width: 100%;
+          height: 100%;
+        }
+        .out .inner .img {
+          width: 1920px;
+          height: 901px;
+          position: absolute;
+          transition: 0.1s;
+          left: -200px;
+
+        }
+        .out .inner .img img {
+          width: 100%;
+          height: 100%;
+        }
+        .out .arrow {
+          font-size: 32px;
+        }
+        .out .arrow i {
+          position: absolute;
+          color: #fff;
+          z-index: 99;
+          cursor: pointer;
+          top: 400px;
+            padding-top: 10px;
+        }
+        .out .arrow .left {
+          right: 790px;
+
+        }
+        .out .arrow .right {
+          left: 1895px;
+
+        }
+            #left01 {
+            background-color: rgba(255, 255, 255);
+                transition: 0.5s;
+        }
+
+            #right01 {
+            background-color: rgba(255, 255, 255);
+                transition: 0.5s;
+        }
+
+
+        .out .arrow .left:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+        .out .arrow .right:hover {
+          background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .out .button {
+          width: 175px;
+          height: 15px;
+          position: absolute;
+          z-index: 99;
+          left: 960px;
+          top: 900px;
+        }
+        .out .button p {
+          width: 15px;
+          height: 15px;
+          float: left;
+          margin: 0 5px;
+          cursor: pointer;
+          background-color: white;
+          border-radius: 50%;
+        }
+        .out .button p:first-child {
+          background-color: #4b9bff;
+        }
+        .out #last {
+          transform: translateX(0);
+          z-index: 9;
+          opacity: 1;
+        }
+        .out #first {
+          transform: translateX(200px);
+          z-index: 99;
+          opacity: 1;
+        }
+        .out #second {
+          transform: translateX(400px);
+          z-index: 9;
+          opacity: 1;
+        }
+        .out #left {
+          transform: translateX(-0px);
+          z-index: 1;
+          opacity: 0;
+        }
+        .out #right {
+          transform: translateX(0px);
+          z-index: 1;
+          opacity: 0;
+        }
+    /*首页logo字体*/
+
+        .img-divfont-01{
+            color: rgb(255, 255, 255);
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            bottom: 620px;
+            left: 725px;
+            font-weight: bolder;
+            font-size: 110px;
+            text-shadow: 2px 2px 2px black;
+            display: none;
+            z-index: 99;
+        }
+        .img-divfont-01>li {
+            float: left;
+        }
+        .img-divfont-02{
+            color: #12c8ff;
+            text-align: center;
+            position: absolute;
+            bottom: 480px;
+            left: 807px;
+            font-weight: bolder;
+            font-size: 50px;
+            text-shadow: 4px 4px 4px #181818;
+            display: none;
+            z-index: 99;
+        }
+
+        .img-divfont-03{
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            bottom: 620px;
+            left: 180px;
+            font-weight: bolder;
+            font-size: 70px;
+            text-shadow: 1px 1px 1px black;
+            display: none;
+            z-index: 99;
+            transition: all 0.4s;
+
+        }
+        .img-divfont-04{
+            color: #ffa600;
+            text-align: center;
+            position: absolute;
+            bottom: 500px;
+            left: 1180px;
+            font-weight: bolder;
+            font-size: 70px;
+            text-shadow: 2px 2px 2px #181818;
+            display: none;
+            z-index: 99;
+            transition: all 0.4s;
+        }
+
+        .img-divfont-05{
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            bottom: 900px;
+            left: 690px;
+            font-weight: bolder;
+            font-size: 70px;
+            text-shadow: 1px 1px 1px black;
+            display: none;
+            z-index: 99;
+            transition: all 0.4s;
+
+        }
+        .img-divfont-06{
+            color: #dadada;
+            text-align: center;
+            position: absolute;
+            bottom: 500px;
+            left: 700px;
+            font-weight: bolder;
+            font-size: 40px;
+            text-shadow: 2px 2px 2px #181818;
+            display: none;
+            z-index: 99;
+        }
+        .img-divfont-07{
+            color: #ffffff;
+            text-align: center;
+            position: absolute;
+            bottom: 360px;
+            left: 890px;
+            font-weight: bolder;
+            font-size: 17px;
+            text-shadow: 1px 1px 1px #181818;
+            /*display: none;*/
+            z-index: 99;
+        }
+
+
+
+/*[立即加入]样式*/
+        .gobutton{
+            width: 300px;
+            height: 70px;
+            position: absolute;
+            background-color: rgba(117, 117, 119, 0.25);
+            color: white;
+            bottom: 390px;
+            left: 810px;
+            font-weight: bold;
+            font-size: 20px;
+            border: 3px solid #ffffff;
+            transition: all 0.5s;
+            cursor: pointer;
+            text-align: center;
+            display: none;
+            z-index: 99;
+            animation-name: bot;
+            animation-duration: 1s;/*运行时间*/
+            animation-delay: 2s;/*延迟运行时间*/
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+        }
+
+            @keyframes bot {
+                50%  {transform: scale(1.1,1.1)}
+                100% {transform: scale(1,1)}
+        }
+
+        .gobutton:hover{
+            width: 300px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.01);
+            font-weight: bold;
+            font-size: 20px;
+            border:3px solid #29a3f6;
+            transition: all 0.5s;
+
+        }
+
+        .gobutton1{
+            width: 300px;
+            height: 70px;
+            position: absolute;
+            background-color: rgba(117, 117, 119, 0.1);
+            color: white;
+            bottom: 190px;
+            left: 810px;
+            font-weight: bold;
+            font-size: 20px;
+            border: 3px solid #ffffff;
+            transition: all 0.5s;
+            cursor: pointer;
+            z-index: 99;
+
+
+        }
+
+        .gobutton1:hover{
+            width: 300px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.01);
+            font-weight: bold;
+            font-size: 20px;
+            border:3px solid #29a3f6;
+            transition: all 0.5s;
+        }
+
+        .gobutton2{
+            width: 300px;
+            height: 70px;
+            position: absolute;
+            background-color: rgba(117, 117, 119, 0.1);
+            color: white;
+            bottom: 190px;
+            left: 810px;
+            font-weight: bold;
+            font-size: 20px;
+            border: 3px solid #ffffff;
+            transition: all 0.5s;
+            cursor: pointer;
+            z-index: 99;
+
+        }
+
+        .gobutton2:hover{
+            width: 300px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.01);
+            font-weight: bold;
+            font-size: 20px;
+            border:3px solid #29a3f6;
+            transition: all 0.5s;
+        }
+
+        /*首页图片变暗div*/
+        .img-divfont-logo{
+            width: 1920px;
+            height: 910px;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            position: absolute;
+            bottom: 0px;
+            font-weight: bolder;
+            font-size: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+
+        #l1,#a1,#e1,#l2,#i1,#o1,#a2{
+            animation-name: l3;
+            animation-duration: 3s;/*运行时间*/
+            animation-delay: 0s;/*延迟运行时间*/
+            animation-direction: alternate;
+            animation-iteration-count: 1;
+            transition: all 0.5s;
+        }
+        @keyframes l3 {
+                0%   {transform: scale(0.5,0.5)}
+                50%  {transform: scale(1,1)}
+                100% {transform: scale(1,1)}
+        }
+
+
+        .lv2-div{
+            width: 100%;
+            height: 901px;
+            background-image: url("../img/LAELIOA-img01.jpg");
+            background-size: cover;
+
+        }
+
+
+        .box-3div{
+            width: 1500px;
+            height: 400px;
+            /*background-color: rgba(21, 34, 51, 0.5);*/
+            position: absolute;
+            margin-top: 80px;
+            left: 11%;
+            box-shadow: 0px 0px 10px 1px #000000;
+
+        }
+
+        .box1{
+            width: 720px;
+            height: 350px;
+            background-image: url("../img/2022-11-23_12.48.34.png");
+            background-size: cover;
+            border: 1px #000000 solid;
+            margin-top: 25px;
+            margin-left: 25px;
+            display: inline-block;
+        }
+        .box1-div{
+            width: 200px;
+            height: 20px;
+            color: rgb(231, 231, 231);
+            line-height: 20px;
+            text-shadow: 2px 2px 2px #181818;
+            font-weight: bold;
+            margin-top: 325px;
+            margin-left: 5px;
+        }
+        .nextimg{
+            width: 50px;
+            height: 20px;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            left: 685px;
+            top: 350px;
+            cursor:pointer;
+            border: 0px;
+        }
+
+        .box2{
+            width: 720px;
+            height: 350px;
+            display: inline-block;
+            position: absolute;
+            margin-top: 25px;
+            background-color: rgba(7, 7, 7, 0.3);
+            box-shadow: inset 0px 0px 20px 1px black;
+            border: 1px #000000 solid;
+        }
+        .new1{
+            width: 100px;
+            color: white;
+            font-size: 20px;
+            border-bottom: 3px solid #18c1ff;
+            margin-top: 10px;
+            margin-left: 20px;
+            cursor:pointer;
+            display: inline-block;
+        }
+        .box2>ul{
+            margin-left: 20px;
+            margin-top: 20px;
+
+        }
+
+        .box2>ul>div{
+            width: 675px;
+            height: 50px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 18px;
+            border-bottom: 2px solid #7c7c7c;
+            text-align: left;
+            line-height: 50px;
+            cursor:pointer;
+        }
+        .box2>ul>div:hover{
+            background-color: rgba(42, 42, 42, 0.6);
+        }
+        .newdate{
+            display: inline-block;
+            color: #a1a1a1;
+            font-size: 15px;
+            width: 100px;
+            height: 50px;
+            text-align: right;
+            position: absolute;
+            left: 580px;
+        }
+
+        .footer1{
+            width: 100%;
+            height: 30px;
+            background-color: rgba(4, 22, 44, 0.5);
+            position: absolute;
+            top: 1840px;
+            color: white;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .footer1>a{
+            color: #9ea0a2;
+        }
+
+        .divclear{
+            width: 1500px;
+            height: 5px;
+            background-color: rgba(246, 246, 246, 0.2);
+            position: absolute;
+            top: 1480px;
+            left: 210px;
+        }
+        .imgname {
+            width: 130px;
+            height: 30px;
+            position: absolute;
+            color: white;
+            font-weight: bolder;
+            font-size: 18px;
+            text-align: left;
+            line-height: 30px;
+            top: 1500px;
+            left: 210px;
+        }
+
+        .imgbutton{
+            width: 100px;
+            height: 25px;
+            position: absolute;
+            color: white;
+            font-weight: bolder;
+            font-size: 15px;
+            text-align: center;
+            line-height: 25px;
+            top: 1503px;
+            left: 350px;
+            border:1px solid white;
+            background-color: rgba(0, 0, 0, 0);
+            transition: all 0.5s;
+        }
+
+        .imgbutton:hover{
+            border:1px solid #02aaff;
+            transition: all 0.5s;
+            cursor: pointer;
+        }
+
+
+        .lv3-div{
+            width: 1500px;
+            height: 270px;
+            /*background-color: rgba(246, 246, 246, 0.05);*/
+            position: absolute;
+            top: 1550px;
+            left: 210px;
+            box-shadow: 0px 0px 5px 1px black;
+        }
+
+        .sehelp{
+            width: 465px;
+            height: 230px;
+            background-color: white;
+            display: inline-block;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px 1px black;
+            text-align: center;
+            background-color: rgba(255,255,255,0.2);
+            transition: all 0.2s;
+        }
+
+        .sehelp1{
+            left: 30px;
+            position: absolute;
+
+        }
+        .sehelp2{
+            left: 515px;
+            position: absolute;
+
+        }
+        .sehelp3{
+            left: 1000px;
+            position: absolute;
+
+        }
+
+        .sehelp>img{
+            width: 100px;
+            height: 100px;
+            margin-top: 50px;
+            transition: all 0.5s;
+        }
+        .sehelp>font{
+            font-size: 20px;
+            color: white;
+            text-shadow: 2px 2px 2px #181818;
+            transition: all 0.5s;
+        }
+
+        .sehelp:hover{
+            background-color: rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+        }
+
+        .help1-div{
+            width: 100%;
+            height: 901px;
+            background-color: rgba(0, 0, 0, 0.65);
+            position: absolute;
+            z-index: 99;
+            display: none;
+        }
+        .help1{
+            width: 1000px;
+            height: 600px;
+            background-color: rgb(4,25,47);
+            border-radius: 23px;
+            box-shadow: 0px 0px 10px 5px #000000;
+            margin-left: 460px;
+            margin-top: 150px;
+            padding-top: 10px;
+
+        }
+        #help1-del{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            left: 1460px;
+            bottom: 750px;
+            cursor: pointer;
+        }
+        .help1img{
+            width: 60px;
+            height: 60px;
+            position: absolute;
+            margin-top: -80px;
+        }
+        .help1name{
+            color: white;
+            position: absolute;
+            font-size: 20px;
+            margin-top: -60px;
+            margin-left: 65px;
+        }
+        .help1-help-div{
+            width: 200px;
+            height: 550px;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .help1-help{
+            width: 100%;
+            height: 50px;
+            color: white;
+            font-size: 18px;
+            border: 1px solid #4b9bff;
+            float: bottom;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 25px;
+            font-weight: bolder;
+            transition: all 0.3s;
+        }
+        .help1-help:hover{
+            border: 1px solid;
+            background-color: white;
+            color: #4f4f4f;
+            font-weight: bolder;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        .js-help1-help-hover{
+            border: 1px solid;
+            background-color: white;
+            color: #4f4f4f;
+            font-weight: bolder;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .help1-font{
+            width: 700px;
+            height: 520px;
+            background-color: rgba(255, 255, 255, 0.9);
+            position: absolute;
+            bottom: 196px;
+            right: 480px;
+            overflow-y:auto
+        }
+        .help1-font>font{
+            font-size: 22px;
+            color: #ffffff;
+            margin-left: 10px;
+            margin-top: 5px;
+            font-weight: bolder;
+        }
+        .help1-font>p{
+            width: 90%;
+            margin-left: 30px;
+            margin-top: 10px;
+            font-size: 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .go-div{
+            width: 100%;
+            height: 910px;
+            background-color: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            z-index: 99;
+            bottom: 0px;
+            display: none;
+
+        }
+
+        .go-del{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 510px;
+            top: -30px;
+            cursor: pointer;
+        }
+
+        .go-div-div{
+            width: 500px;
+            height: 160px;
+            background-color: rgb(4,25,47);
+            position: absolute;
+            z-index: 99;
+            bottom: 380px;
+            left: 720px;
+            box-shadow: 0px 0px 10px 5px black;
+            text-align: center;
+            line-height: 80px;
+        }
+
+        .go-div-div-div{
+            width: 400px;
+            height: 200px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        .go-div-div>button{
+            width: 200px;
+            height: 50px;
+            color: white;
+            border:1px solid #4b9bff;
+            float: left;
+            font-size: 17px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-left: 35px;
+            background: rgba(255, 255, 255, 0);
+            transition: all 0.2s;
+        }
+
+        .go-div-div>button:hover{
+            color: #4b4b4b;
+            border:1px solid #ffffff;
+            background: rgb(241, 241, 241);
+            transition: all 0.2s;
+            cursor: pointer;
+        }
+
+        .go-div-div>font{
+            color: #ffffff;
+            font-size: 25px;
+        }
+
+        .music-div{
+            width: 300px;
+            height: 100px;
+            background-color: #E53333;
+            position: fixed;
+            bottom: 0;
+
+            right: 0;
+            z-index: 9999;
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
